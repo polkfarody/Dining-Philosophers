@@ -53,7 +53,7 @@ func (p *Philosopher) timeout(duration time.Duration) {
 
 // Put down chopsticks in a random order
 func (p *Philosopher) putDownChopSticks() {
-	switch rand.Intn(1) + 1 {
+	switch rand.Intn(2) {
 	case 0:
 		p.left.Unlock()
 		p.right.Unlock()
@@ -65,7 +65,7 @@ func (p *Philosopher) putDownChopSticks() {
 
 // Pick up chopsticks in a random order
 func (p *Philosopher) pickUpChopSticks() {
-	switch rand.Intn(1) + 1 {
+	switch rand.Intn(2) {
 	case 0:
 		p.left.Lock()
 		p.right.Lock()
