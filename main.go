@@ -6,7 +6,7 @@ import (
 
 const (
 	// Number seats at the table
-	seats  = 5
+	seats = 5
 	// Number of portions on each plate
 	portions = 3
 )

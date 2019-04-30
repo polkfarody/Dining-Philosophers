@@ -42,7 +42,7 @@ func (p *Philosopher) eat() {
 	// Take some time eating.
 	p.timeout(eat)
 
-	fmt.Println("Phil",p.id,"finished")
+	fmt.Println("Phil", p.id, "finished")
 	p.waiter.onFinishEating(p)
 }
 
